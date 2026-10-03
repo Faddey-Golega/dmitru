@@ -1,4 +1,4 @@
-import os
+import os 
 import time
 import random #import
 def check_winner(pole, mark):
@@ -38,6 +38,7 @@ def bot_move(pole):
         pole[r][c] = 'o'  # Временно ставим нолик
 
         if check_winner(pole, 'o'):
+            pole[r][c] = ' '
             return r, c   # Если выиграл — сразу уходим с этим ходом!
 
         pole[r][c] = ' '  # Если не выиграл — обязательно убираем нолик обратно
