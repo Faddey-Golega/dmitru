@@ -1,0 +1,16 @@
+import random
+number=str(random.randint(1,100))
+print('Введите число от 1 до 100')
+x=0
+while int(x)!=number:
+    x=input()
+    try:
+        if 1>int(x)>100:
+            print('Вводите только от 1 до 100')
+        elif int(x)<int(number):
+            print('Больше!!!')
+        elif int(x)>int(number):
+            print('Меньше!!!')
+    except:
+        print('Вводите только цифры')
+print('Ура вы угадали!!!!!')
