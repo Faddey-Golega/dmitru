@@ -5,9 +5,7 @@ x=0
 while int(x)!=number:
     x=input()
     try:
-        if 1>int(x)>100:
-            print('Вводите только от 1 до 100')
-        elif int(x)<int(number):
+        if int(x)<int(number):
             print('Больше!!!')
         elif int(x)>int(number):
             print('Меньше!!!')
